@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.namedparam.MapSqlParameterSource;
 import org.springframework.jdbc.core.simple.SimpleJdbcInsert;
 import org.springframework.stereotype.Repository;
 
-@Repository
+@Repository("mysqlRepository")
 public class ProductRepositoryMySQL extends ProductRepository {
     private final JdbcTemplate jdbcTemplate;
     private final SimpleJdbcInsert insert;
